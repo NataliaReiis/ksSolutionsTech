@@ -1,0 +1,18 @@
+
+@mixin text-style($size, $weight, $line, $color){
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    color: $color;
+}
+
+@mixin button-style($out, $border, $line, $width, $background, $color) {
+    border-radius: $border-radius;
+    outline: $out;
+    border: $border;
+    line-height: $line;
+    width: $width;
+    background: $background;
+    color: $color;
+
+}
