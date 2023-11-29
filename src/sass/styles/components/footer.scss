@@ -1,0 +1,68 @@
+footer{
+    background-color: $base-color;
+    color: white;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 60vh;
+    place-items: center;
+    margin-top: 10rem;
+  
+    .container-menu{
+        
+        .links-container{
+            margin-top: 1rem;
+            .links{
+                list-style: none;
+                @include text-style(0.95rem, 200, 2.25rem, white);
+
+            }
+        }
+        .social-media {
+            margin-top: 1rem;
+
+            a{
+                color: white;
+            }
+            svg{
+                zoom: 1.2;
+            }
+        }
+    }
+
+.solutions-container {
+    .list-container{
+          margin-top: 1rem;
+        .list-item-container{
+            @include text-style(0.95rem, 200, 2.25rem, white);
+            list-style:inside;
+        }
+    }
+}
+.infos-container {
+    width: 85%;
+    .contact-content{
+        h4{
+            padding: 1rem 0;
+        }
+        p{
+            @include text-style(0.95rem, 200, 1.45rem, $text-color);
+            padding: 0.25rem 0;
+        }
+        span{
+            color: $text-color;
+            text-decoration: underline;
+        }
+    }
+  }
+ .linha{
+   border-top: 1px solid white;
+   grid-column: 1/-1;
+   width: 100%;
+   text-align: center;
+   padding: 1rem 0;
+
+   p{
+    @include text-style(0.95rem, 100, 1.5rem, $text-color);
+   }
+}
+}

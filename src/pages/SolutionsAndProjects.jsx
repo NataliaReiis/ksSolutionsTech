@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 import LogoColorida from "../assets/img/logoColorida.png";
 import Icon1 from '../assets/img/icon1.png'
@@ -8,8 +9,8 @@ import Icon3 from '../assets/img/icon3.png'
 import Icon4 from '../assets/img/icon4.png'
 
 import { Modal, Box, Typography, Button, IconButton } from '@mui/material/';
-/* import CloseIcon from '@mui/icons-material/Close';
- */
+import CloseIcon from '@mui/icons-material/Close';
+
 import { useState } from 'react';
 
 export default function SolutionsAndProjects() {
@@ -42,6 +43,10 @@ export default function SolutionsAndProjects() {
         <div className='solutions-Projects'>
            <Navbar logo={LogoColorida} colortxt="#010615" bg="white" />
            <div className="solutions-container">
+            <div className="text-container">
+                <h2>Descubra a transformação: Qual solução sua empresa precisa para alcançar novos horizontes?</h2>
+                <p>Explore Oportunidades, Potencialize Eficiências e Eleve Seu Negócio ao Próximo Nível. Descubra as Soluções Personalizadas que Impulsionarão sua Empresa rumo ao Sucesso.</p>
+            </div>
            <section id="solutions" className="container-card">
                 <div className="content-card">
                     <img src={Icon1} alt="" />
@@ -55,7 +60,7 @@ export default function SolutionsAndProjects() {
                 </div>
                 <div className="content-card">
                     <img src={Icon3} alt="" />
-                    <h1>Otimização de processos</h1>
+                    <h1>Implantação ERP e robô</h1>
                     <Button onClick={() => handleOpen('processOptimization')}>Ver Mais</Button>
                 </div>
                 <div className="content-card">
@@ -71,14 +76,14 @@ export default function SolutionsAndProjects() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                   {/*  <IconButton
+                    <IconButton
                         edge="end"
                         color="inherit"
                         onClick={handleClose}
                         sx ={{position: 'absolute', top: 0, right: 0}}
                     >
                         <CloseIcon />
-                    </IconButton> */}
+                    </IconButton>
                     <Typography id="modal-modal-tittle" variant="h6" component="h2">
                         {selectedSolution === 'automation' && "Automação de Sistemas"}
                         {selectedSolution === 'processsManagement' && "Gestão de processo e tecnologia"}
@@ -116,6 +121,7 @@ export default function SolutionsAndProjects() {
             </Modal>
            </div>
            <Projects />
+           <Footer />
         </div>
     )
 }

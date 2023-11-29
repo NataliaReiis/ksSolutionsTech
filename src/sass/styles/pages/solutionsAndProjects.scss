@@ -2,6 +2,26 @@
     width: 100%;
     height: auto;
 
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-items: center;
+        h2{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 8rem ;
+            @include text-style(2rem, 300, 2.75rem, $base-color);
+        }
+        p{
+            @include text-style(1.15rem, 200, 1.45rem, $base-color);
+            width: 60%;
+            padding-top: 2rem;
+        }
+    }
+    
     .container-card {
         padding-top: 5rem ;
         display: flex;

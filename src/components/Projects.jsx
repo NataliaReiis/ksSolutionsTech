@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Projects() {
   const [activeSection, setActiveSection] = useState(0);

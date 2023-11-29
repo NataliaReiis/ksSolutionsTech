@@ -1,12 +1,12 @@
 .navbar{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         height: 15vh;
         width: auto;
         
         .image-container{
             img{
-                padding: 1rem;
+                padding: 3rem;
                 zoom: 0.8;
             }
         }

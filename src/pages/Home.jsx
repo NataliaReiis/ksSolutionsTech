@@ -1,8 +1,10 @@
 import Navbar from "../components/Navbar";
+import ImageSVG from "../components/ImageSVG";
+
 import LogoBranca from "../assets/img/logoBranca.png";
 import { motion } from "framer-motion";
-import {aniX, scaleVariant, init} from "../utils/animations"
-import imagePrincipal from '../assets/img/imgPrincipal.png'
+import {aniX, scaleVariant, init} from "../utils/animations";
+
 
 
 export default function Home() {
@@ -46,19 +48,20 @@ export default function Home() {
               whileHover="hover"
               variants={scaleVariant }
               >
-                Ver soluções</motion.button>
+                Ver soluções KS</motion.button>
             </div>
             
           </motion.div>
           <motion.div 
-            className="image-principal-container"
-            variants={aniX} 
-            initial="hidden" 
-            animate="show"
-          > 
-                <img src={imagePrincipal} alt="tecnologia" />
+          className="image-principal-container"
+          variants={aniX} 
+          initial="hidden" 
+          animate="show"
+          >
+             <ImageSVG className="svg" />
           </motion.div>
       </main>
+      
   </div>
   );
-};
+}

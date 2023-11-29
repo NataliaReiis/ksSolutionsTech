@@ -1,6 +1,7 @@
 .home {
     background: $base-color;
-   
+    height: 100vh;
+    
     .main-container{
         display: flex;
 
@@ -13,15 +14,18 @@
         
           
                h1{
-                    @include text-style(7rem, 800, 1.2em, $primary-color);
-                    text-shadow: 10px 4px 4px rgb(1, 3, 10);
+                    @include text-style(6rem, 800, 1.2em, $primary-color);
+                    text-shadow: 4px 2px 2px rgb(3, 20, 85);
+                    
                 }
                 h2{
-                    @include text-style(2.5em, 400, 1.5em, white)
+                    @include text-style(1.75rem, 300, 1em, $text-color);
+                    letter-spacing: 6px;
                 }
                 p{
-                    @include text-style(1.5rem, 200, 1.3em, white);
+                    @include text-style(1.4rem, 200, 1.3em, $text-color);
                     width: 50vw;
+                    padding: 1rem;
                     
                 }
         
@@ -37,9 +41,14 @@
                 }
                 
             }
-        .image-principal-container{
-            width: auto;
-        }
+      
+            .image-principal-container{
+                width: 100%;
+                margin-top: 4rem;
+                .svg{
+                    zoom: 1;
+                }
+            }
     }
 
 }
