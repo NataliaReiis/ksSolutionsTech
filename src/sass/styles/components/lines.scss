@@ -1,0 +1,36 @@
+.container-line {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    height: 80vh;
+    top: 5rem;
+    right: 0;
+    overflow: hidden;
+    z-index: 20;
+    .animated-line{
+        display: flex;
+        width: auto;
+        height: 50px;
+        animation: rotateInfinity 6s ease-in-out 5s infinite alternate; 
+     
+
+       
+
+    img {
+      width: 95%;
+      height: 85%;
+    }
+    }
+}
+
+@keyframes rotateInfinity {
+    0% {
+        transform: rotate(0);
+    }
+   
+    100%{
+        transform: rotate(180);
+    }
+
+
+}

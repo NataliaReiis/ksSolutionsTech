@@ -1,0 +1,52 @@
+$x14: 1920px; // Extra Super Large - 120 rem
+$x13: 1536px; // Extra Big Large - 96 rem
+$x12: 1440px; // Super Large - 90 rem
+$x1: 1024px; // Extra Large - 80 rem
+$lg: 1024px; // Medium - 48 rem
+$sm: 640px; // Small - 40 rem
+$ssm: 360px; // Super Small 0 22.5rem
+
+@mixin d($size) {
+    @if $size == x14 {
+        @media screen and (min-width: $x14) {
+            @content
+        }
+    }
+
+    @else if $size == x13{
+        @media screen and (min-width: $x13) {
+            @content
+        }
+    }
+
+    @else if $size == x12{
+        @media screen and (min-width: $x12) {
+            @content
+        }
+    }
+    @else if $size == x1{
+        @media screen and (min-width: $x12) {
+            @content
+        }
+    }
+    @else if $size == lg{
+        @media screen and (min-width: $lg) {
+            @content
+        }
+    }
+    @else if $size == md{
+        @media screen and (min-width: $md) {
+            @content
+        }
+    }
+    @else if $size == sm{
+        @media screen and (min-width: $sm) {
+            @content
+        }
+    }
+    @else if $size == ssm{
+        @media screen and (min-width: $ssm) {
+            @content
+        }
+    }
+}

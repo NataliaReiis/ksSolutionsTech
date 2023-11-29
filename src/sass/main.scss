@@ -1,4 +1,8 @@
-@import "./utils/global.scss";
-@import "./utils/mixin.scss";
-@import "./utils/variables.scss";
-@import "./pages.scss"
+@import "./styles/utils/global.scss";
+@import "./styles/utils/mixin.scss";
+@import "./styles/utils/variables.scss";
+@import './styles/components/navbar.scss';
+@import './styles/pages/home.scss';
+@import './styles/pages/solutionsAndProjects.scss';
+
+

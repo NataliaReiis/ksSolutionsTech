@@ -7,56 +7,61 @@ export default function NavBar(props) {
   return (
     <>
       <motion.nav style={{ background: props.bg }}
+        className="navbar"
         variants={aniX} 
         initial="hidden" 
         animate="show"
       >
-        <Link to="/">
+        <Link to="/" className="image-container">
           <motion.img src={props.logo} alt="" 
             whileTap="tap"
             whileHover="hover"
             variants={scaleVariant}
           />
         </Link>
-        <motion.ul>
-          <Link to="/">
+        <motion.ul className="links-container">
+          <Link to="/" >
             <motion.li
+              className="links"
               style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
             >
               Home
-            </motion.li>{" "}
+            </motion.li >
           </Link>
           <Link to="/solutions">
             <motion.li
+              className="links"
               style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
             >
               Soluções e projetos
-            </motion.li>{" "}
+            </motion.li>
           </Link>
           <Link to="/about">
             <motion.li
+              className="links"
               style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
             >
               Sobre
-            </motion.li>{" "}
+            </motion.li>
           </Link>
           <Link to="/contact">
             <motion.li
+              className="links"
               style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
             >
-              Contato{" "}
+              Contato
             </motion.li>
           </Link>
         </motion.ul>

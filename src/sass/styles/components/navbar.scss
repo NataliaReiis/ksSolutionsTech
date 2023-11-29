@@ -1,0 +1,39 @@
+.navbar{
+        display: flex;
+        justify-content: space-evenly;
+        height: 15vh;
+        padding: 1em 0;
+        
+        .image-container{
+            img{
+                zoom: 0.8;
+            }
+        }
+
+        .links-container{
+            display: flex;
+            list-style: none;
+            width: 70%;
+            justify-content: center;
+            align-self: center;
+    
+    
+             .links{
+                margin: 1em 3em;
+                @include text-style(1em, 300, 1em, white);
+                padding-bottom: 0.75em;
+                border: 2px solid transparent;
+    
+            
+           
+            }
+            .links:hover{
+                
+                border-bottom: 1px solid $primary-color;
+            }
+          
+            }
+        }
+
+
+
