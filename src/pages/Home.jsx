@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Navbar logo={LogoBranca} colortxt="white" bg="#010615" />
+      <Navbar style={{paddingTop: "2rem"}} logo={LogoBranca} colortxt="white" bg="#010615" />
       <main className="main-container">
         <motion.div
             className="container-home"

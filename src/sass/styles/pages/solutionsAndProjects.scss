@@ -1,0 +1,53 @@
+.solutions-Projects{
+    width: 100%;
+    height: auto;
+
+    .container-card {
+        padding-top: 5rem ;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2;
+        justify-content: center;
+        margin-top: 10%;
+
+        .content-card {
+            background: #040916;
+            border: 1px solid white;
+            max-width: 250px;
+            min-height: 220px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 3%;
+
+            img {
+                position: absolute;
+                width: 100px;
+                margin-bottom: 13em;
+                margin-left: 2em;
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: 300;
+                margin: 2em 0 1em 0;
+            }
+
+            button {
+                width: 40%;
+                padding: 0.7em 0;
+                align-self: center;
+                background: none;
+                border: 1px solid #C26522;
+                color: white;
+                border-radius: 10px;
+            cursor: pointer;
+
+        }
+    }
+  }
+}
+
