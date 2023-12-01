@@ -1,6 +1,26 @@
 
-$base-color: #010615;
-$primary-color: #00DBCD;
-$secondary-color: #101D44;
-$border-radius: 10px;
-$text-color: rgb(248, 220, 220);
+    $background: white;
+    $text-color: #010615;
+    $primary-color: #00DBCD;
+    $secondary-color: #0c1633;
+    $border-radius: 10px;
+    $light-text: rgb(238, 237, 237); 
+    $orange: #C26522;
+  
+[data-theme = "dark"] {
+    $background: $background;
+}
+::-webkit-scrollbar {
+    background-color: $background;
+    width: 0.2rem;
+      @media screen and (min-width: 280px) and (max-width: 1000px) {
+        padding: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+}

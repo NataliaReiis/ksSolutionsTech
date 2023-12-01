@@ -3,17 +3,19 @@ import { Link } from "react-router-dom";
 import { scaleVariant, aniX } from "../utils/animations";
 import { motion } from "framer-motion";
 
-export default function NavBar(props) {
+import Logo from '../assets/img/logoColorida.png'
+
+export default function NavBar() {
   return (
     <>
-      <motion.nav style={{ background: props.bg }}
+      <motion.nav 
         className="navbar"
         variants={aniX} 
         initial="hidden" 
         animate="show"
       >
         <Link to="/" className="image-container">
-          <motion.img src={props.logo} alt="" 
+          <motion.img src={Logo} alt="" 
             whileTap="tap"
             whileHover="hover"
             variants={scaleVariant}
@@ -23,7 +25,6 @@ export default function NavBar(props) {
           <Link to="/" >
             <motion.li
               className="links"
-              style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
@@ -34,7 +35,6 @@ export default function NavBar(props) {
           <Link to="/solutions">
             <motion.li
               className="links"
-              style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
@@ -45,7 +45,6 @@ export default function NavBar(props) {
           <Link to="/about">
             <motion.li
               className="links"
-              style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}
@@ -56,7 +55,6 @@ export default function NavBar(props) {
           <Link to="/contact">
             <motion.li
               className="links"
-              style={{ color: props.colortxt }}
               whileTap="tap"
               whileHover="hover"
               variants={scaleVariant}

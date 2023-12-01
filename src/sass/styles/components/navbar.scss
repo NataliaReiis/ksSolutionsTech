@@ -23,7 +23,7 @@
 
              .links{
                 margin: 1em 3em;
-                @include text-style(1em, 500, 1em, white);
+                @include text-style(1em, 500, 1em, $text-color);
                 padding-bottom: 0.75em;
                 border: 2px solid transparent;
     
@@ -42,7 +42,7 @@
         
         align-items: center;
         button{
-            @include button-style(none, none, 1rem, 100%, $base-color, $text-color);
+            @include button-style(none, none, 1rem, 100%, $secondary-color, white);
             cursor: pointer;
             padding: 1rem;
             margin: 2rem 1rem;

@@ -6,7 +6,7 @@
     padding: 10rem 0 0 0;
     h2{
         text-align: center;
-        @include text-style(1.75rem, 500, 2.5rem, $base-color);
+        @include text-style(1.75rem, 500, 2.5rem, $text-color);
         width: 70%;
         margin: 0 auto;
     }
@@ -28,10 +28,10 @@
             }
             span{
                 h1{
-                    @include text-style(1.5rem, 400, 2.5rem, $base-color);
+                    @include text-style(1.5rem, 400, 2.5rem, $text-color);
                 }
                 p{
-                    @include text-style(1rem, 400, 1.7rem, $base-color);
+                    @include text-style(1rem, 400, 1.7rem, $text-color);
                 }
             }
            

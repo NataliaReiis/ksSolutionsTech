@@ -5,7 +5,7 @@
     .main-container{
         display: flex;
         height: 100vh;
-        background-color: white;
+        background-color: $background;
 
 
         .container-home{
@@ -16,16 +16,16 @@
             padding: 5em 2.5em;
 
                h1{
-                    @include text-style(8rem, 800, 1.2em, $base-color);
+                    @include text-style(8rem, 800, 1.2em,  $text-color);
                     
                     
                 }
                 h2{
-                    @include text-style(2rem, 700, 1em, $primary-color);
+                    @include text-style(2rem, 700, 1em,  $text-color);
                     letter-spacing: 6px;
                 }
                 p{
-                    @include text-style(1.4rem, 300, 1.6em, $base-color);
+                    @include text-style(1.4rem, 300, 1.6em,  $text-color);
                     width: 50vw;
                     padding: 2rem 1rem 0 1rem;
                     
@@ -33,7 +33,7 @@
         
                 button{
                     margin: 2rem 1rem;
-                    @include button-style(none, 1px solid $base-color,  3rem, 10rem, none, $base-color);
+                    @include button-style(none, 1px solid  $orange,  3rem, 10rem, none, $orange);
                     cursor: pointer;
                     &:hover{
                         @include button-style(none, 1px solid $primary-color, 3rem, 10rem, none, $primary-color);
@@ -61,5 +61,11 @@
                     
             }
     }
-
+   
+        @media screen and (min-width: 280px) and (max-width: 1000px) {
+            padding: 0;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
 }

@@ -14,10 +14,10 @@
             width: 80%;
             margin: 0 auto;
             padding-top: 4rem ;
-            @include text-style(2rem, 300, 2.75rem, $base-color);
+            @include text-style(2rem, 300, 2.75rem, $text-color);
         }
         p{
-            @include text-style(1.15rem, 200, 1.45rem, $base-color);
+            @include text-style(1.15rem, 200, 1.45rem, $text-color);
             width: 60%;
             padding-top: 2rem;
         }
@@ -32,8 +32,8 @@
         margin-top: 10%;
 
         .content-card {
-            background: #040916;
-            border: 1px solid white;
+            background: $text-color;
+            border: 1px solid $light-text;
             max-width: 250px;
             min-height: 220px;
             border-radius: 10px;
@@ -50,7 +50,7 @@
             }
 
             h1 {
-                color: white;
+                color: $light-text;
                 text-align: center;
                 font-size: 1.4em;
                 font-weight: 300;
@@ -62,8 +62,8 @@
                 padding: 0.7em 0;
                 align-self: center;
                 background: none;
-                border: 1px solid #C26522;
-                color: white;
+                border: 1px solid $orange;
+                color: $light-text;
                 border-radius: 10px;
             cursor: pointer;
 

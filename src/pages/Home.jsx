@@ -5,7 +5,6 @@ import CardSolutions from '../components/CardsSolutions';
 import Footer from '../components/Footer';
 
 import ImgPrincipal from "../assets/img/ImgPrincipal.png";
-import LogoColorida from "../assets/img/logoColorida.png";
 
 import { motion } from "framer-motion";
 import {aniX, scaleVariant, init} from "../utils/animations";
@@ -16,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="home">
-       <Navbar logo={LogoColorida } colortxt="#010615" bg="#" />
+       <Navbar />
       <main className="main-container">
         <motion.div
             className="container-home"

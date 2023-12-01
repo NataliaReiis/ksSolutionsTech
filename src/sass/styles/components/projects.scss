@@ -49,14 +49,14 @@
         padding-left: 3em;
 
         h6 {
-            color: #C26522;
+            color: $orange;
             letter-spacing: 0.6em;
             font-size: 1.25em;
             font-weight: 600;
         }
 
         h1 {
-            color: #0b152f;
+            color: $text-color;
             font-size: 3.10rem;
             font-weight: 500;
             padding-top: 0.5em;
@@ -81,15 +81,15 @@
             padding: 0 2em;
             margin: 0 10px;
             cursor: pointer;
-            color: #0b152f;
+            color: $text-color;
             
         }
 
         a.active {
-            border-top: 4px solid #2B9790;
+            border-top: 4px solid $primary-color;
             border-radius: 3px;
             padding-top: 1em;
-            color: #2B9790;
+            color: $primary-color;
             font-size: 1em;
             transition: 0.3s ease;
 
