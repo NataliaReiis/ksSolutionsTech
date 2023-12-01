@@ -1,0 +1,41 @@
+.beneficts{
+    width: 70%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding: 10rem 0 0 0;
+    h2{
+        text-align: center;
+        @include text-style(1.75rem, 500, 2.5rem, $base-color);
+        width: 70%;
+        margin: 0 auto;
+    }
+    .beneficts-container{
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+
+        .itens-container{
+            width: 30vw;
+            height: 40vh;
+            display: flex;
+            .image-beneficts{
+                width: 14vw;
+                height: 14vh;
+            }
+            span{
+                h1{
+                    @include text-style(1.5rem, 400, 2.5rem, $base-color);
+                }
+                p{
+                    @include text-style(1rem, 400, 1.7rem, $base-color);
+                }
+            }
+           
+        }
+    }
+    
+}

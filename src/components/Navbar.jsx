@@ -39,7 +39,7 @@ export default function NavBar(props) {
               whileHover="hover"
               variants={scaleVariant}
             >
-              Soluções e projetos
+              Soluções KS
             </motion.li>
           </Link>
           <Link to="/about">
@@ -65,6 +65,9 @@ export default function NavBar(props) {
             </motion.li>
           </Link>
         </motion.ul>
+        <div className="button-especialista">
+          <button>Falar com um especialista</button>
+        </div>
       </motion.nav>
     </>
   );

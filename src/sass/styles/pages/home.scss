@@ -1,41 +1,46 @@
 .home {
-    background: $base-color;
-    height: 100vh;
-    
+    height: 100%;
+   
+
     .main-container{
         display: flex;
+        height: 100vh;
+        background-color: white;
+
 
         .container-home{
             height: auto;
-            width: 70vw;
+            width: 60vw;
             flex-direction: column;
             justify-content: center;
             padding: 5em 2.5em;
-        
-          
+
                h1{
-                    @include text-style(6rem, 800, 1.2em, $primary-color);
-                    text-shadow: 4px 2px 2px rgb(3, 20, 85);
+                    @include text-style(8rem, 800, 1.2em, $base-color);
+                    
                     
                 }
                 h2{
-                    @include text-style(1.75rem, 300, 1em, $text-color);
+                    @include text-style(2rem, 700, 1em, $primary-color);
                     letter-spacing: 6px;
                 }
                 p{
-                    @include text-style(1.4rem, 200, 1.3em, $text-color);
+                    @include text-style(1.4rem, 300, 1.6em, $base-color);
                     width: 50vw;
-                    padding: 1rem;
+                    padding: 2rem 1rem 0 1rem;
                     
                 }
         
                 button{
-                    margin: 1em;
-                    @include button-style(none, 1px solid white,  2.5rem, 10rem, none, #00DBCD);
+                    margin: 2rem 1rem;
+                    @include button-style(none, 1px solid $base-color,  3rem, 10rem, none, $base-color);
                     cursor: pointer;
-        
+                    &:hover{
+                        @include button-style(none, 1px solid $primary-color, 3rem, 10rem, none, $primary-color);
+
+                    }
                     a{
-                        color: $primary-color;
+                        color: $text-color;
                     }
               
                 }
@@ -43,11 +48,17 @@
             }
       
             .image-principal-container{
+                height: auto;
                 width: 100%;
-                margin-top: 4rem;
-                .svg{
-                    zoom: 1;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .image{
+                    width: 80%;
+                }    
+                    
+                    
             }
     }
 

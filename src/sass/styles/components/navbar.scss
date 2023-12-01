@@ -2,12 +2,13 @@
         display: flex;
         justify-content: space-between;
         height: 15vh;
-        width: auto;
+        width: 100%;
+      
         
         .image-container{
             img{
-                padding: 3rem;
-                zoom: 0.8;
+                
+                zoom: 0.7;
             }
         }
 
@@ -33,9 +34,21 @@
                 
                 border-bottom: 1px solid $primary-color;
             }
+            
           
-            }
+    }
+    .button-especialista{
+        display: flex;
+        
+        align-items: center;
+        button{
+            @include button-style(none, none, 1rem, 100%, $base-color, $text-color);
+            cursor: pointer;
+            padding: 1rem;
+            margin: 2rem 1rem;
         }
+    }
+}
 
 
 

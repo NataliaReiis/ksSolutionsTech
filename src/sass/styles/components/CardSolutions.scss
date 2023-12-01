@@ -1,6 +1,7 @@
 .solutions-Projects{
     width: 100%;
     height: auto;
+    margin: 1rem 0;
 
     .text-container{
         display: flex;
@@ -12,7 +13,7 @@
         h2{
             width: 80%;
             margin: 0 auto;
-            padding-top: 8rem ;
+            padding-top: 4rem ;
             @include text-style(2rem, 300, 2.75rem, $base-color);
         }
         p{
@@ -23,7 +24,7 @@
     }
     
     .container-card {
-        padding-top: 5rem ;
+        padding-top: 0.3rem ;
         display: flex;
         flex-wrap: wrap;
         flex: 2;

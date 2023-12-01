@@ -1,7 +1,12 @@
 import Navbar from "../components/Navbar";
-import ImageSVG from "../components/ImageSVG";
+import Beneficits from "../components/Benefits";
+import Projects from '../components/Projects';
+import CardSolutions from '../components/CardsSolutions';
+import Footer from '../components/Footer';
 
-import LogoBranca from "../assets/img/logoBranca.png";
+import ImgPrincipal from "../assets/img/ImgPrincipal.png";
+import LogoColorida from "../assets/img/logoColorida.png";
+
 import { motion } from "framer-motion";
 import {aniX, scaleVariant, init} from "../utils/animations";
 
@@ -11,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Navbar style={{paddingTop: "2rem"}} logo={LogoBranca} colortxt="white" bg="#010615" />
+       <Navbar logo={LogoColorida } colortxt="#010615" bg="#" />
       <main className="main-container">
         <motion.div
             className="container-home"
@@ -33,8 +38,7 @@ export default function Home() {
               >
               Tecnologia</motion.h1>
             <p>
-              Uso consciente e efetivo das tecnologias disponíveis para aprimorar
-              processos e rotinas.
+            Descubra os Benefícios da Consultoria em Gestão de Processos e Automação Robótica: Potencialize a Eficiência Operacional, Reduza Custos e Leve Sua Empresa para o Próximo Nível Tecnológico.
             </p>
             <div>
               <motion.button
@@ -43,25 +47,17 @@ export default function Home() {
                 variants={scaleVariant }
               >
                 Entrar em contato </motion.button>
-              <motion.button
-              whileTap="tap"
-              whileHover="hover"
-              variants={scaleVariant }
-              >
-                Ver soluções KS</motion.button>
             </div>
             
           </motion.div>
-          <motion.div 
-          className="image-principal-container"
-          variants={aniX} 
-          initial="hidden" 
-          animate="show"
-          >
-             <ImageSVG className="svg" />
-          </motion.div>
+          <div className="image-principal-container">
+            <img src={ImgPrincipal} alt="" />
+        </div>
       </main>
-      
+      <CardSolutions />
+      <Beneficits />
+      <Projects />
+      <Footer/>
   </div>
   );
 }

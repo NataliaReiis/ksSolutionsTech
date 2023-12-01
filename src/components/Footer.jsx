@@ -26,7 +26,7 @@ export default function Footer() {
         <h4>Menu</h4>
         <ul className="links-container">
           <Link to="/"><li className="links">Home</li></Link>
-          <Link to="/solutions"><li className="links">Soluções e projetos</li></Link>
+          <Link to="/solutions"><li className="links">Soluções</li></Link>
           <Link to="/about"> <li className="links">Sobre</li></Link>
           <Link to="/contact"><li className="links">Contato</li></Link>
         </ul>
