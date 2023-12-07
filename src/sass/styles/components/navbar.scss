@@ -1,54 +1,103 @@
-.navbar{
-        display: flex;
-        justify-content: space-between;
-        height: 15vh;
-        width: 100%;
-      
-        
-        .image-container{
-            img{
-                
-                zoom: 0.7;
-            }
-        }
-
-        .links-container{
-            display: flex;
-            list-style: none;
-            width: auto;
-            justify-content: center;
-            align-self: center;
-            align-items: center;
-            padding-top: 2rem;
-
-             .links{
-                margin: 1em 3em;
-                @include text-style(1em, 500, 1em, $text-color);
-                padding-bottom: 0.75em;
-                border: 2px solid transparent;
-    
-            
-           
-            }
-            .links:hover{
-                
-                border-bottom: 1px solid $primary-color;
-            }
-            
-          
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    img {
+      height: 90%;
+      padding-top: 3.25rem;
     }
-    .button-especialista{
-        display: flex;
-        
-        align-items: center;
-        button{
-            @include button-style(none, none, 1rem, 100%, $secondary-color, white);
-            cursor: pointer;
-            padding: 1rem;
-            margin: 2rem 1rem;
-        }
-    }
+  }
+  
+.toggle{
+  display: none;
+ }    
 }
 
+.nav-container {
+  .links-container {
+    display: flex;
+    list-style: none;
+    justify-content: center;
 
+    li {
+      margin: 1em 3em;
+      @include text-style(1em, 500, 1em, $text-color);
+      padding-bottom: 0.75em;
+      border: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+  }
+}
+.button-especialista {
+  display: flex;
+  margin: 0 1rem;
+  button {
+    @include button-style(
+      none,
+      none,
+      1rem,
+      100%,
+      $secondary-color,
+      $light-text
+    );
+    cursor: pointer;
+    padding: 1rem;
+  }
+}
 
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .navbar,
+  nav {
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+
+    .toggle {
+      display: block;
+      z-index: 25;
+      margin: 2rem;
+      .x {
+        color: white;
+      }
+    }
+    .button-especialista {
+      display: none;
+      button {
+        display: none;
+      }
+    }
+    .nav-container {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100vh;
+      background-color: $text-color;
+      color: $light-text;
+      z-index: 20;
+      border-radius: $border-radius;
+      transition: 0.5s ease-in-out;
+
+      .links-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 10rem 0;
+        transition: 0.5s ease-in-out;
+
+        li {
+          z-index: 25;
+          color: $light-text;
+          padding: 1rem 0;
+        }
+      }
+    }
+    .nav-visible {
+      display: block;
+    }
+  }
+}

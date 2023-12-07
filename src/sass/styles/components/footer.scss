@@ -62,7 +62,7 @@ footer{
    padding: 1rem 0;
 
    p{
-    @include text-style(0.95rem, 100, 1.5rem, $text-color);
+    @include text-style(0.95rem, 100, 1.5rem, $light-text);
    }
 }
 }

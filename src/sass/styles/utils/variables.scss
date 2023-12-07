@@ -8,7 +8,9 @@
     $orange: #C26522;
   
 [data-theme = "dark"] {
-    $background: $background;
+    $background:#010615;
+    $text-color: white;
+   
 }
 ::-webkit-scrollbar {
     background-color: $background;

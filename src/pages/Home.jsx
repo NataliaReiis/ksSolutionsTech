@@ -3,6 +3,7 @@ import Beneficits from "../components/Benefits";
 import Projects from '../components/Projects';
 import CardSolutions from '../components/CardsSolutions';
 import Footer from '../components/Footer';
+import Partners from '../components/Partners';
 
 import ImgPrincipal from "../assets/img/ImgPrincipal.png";
 
@@ -56,6 +57,7 @@ export default function Home() {
       <CardSolutions />
       <Beneficits />
       <Projects />
+      <Partners/>
       <Footer/>
   </div>
   );

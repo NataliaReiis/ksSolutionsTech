@@ -1,0 +1,18 @@
+.partners-container {
+    margin-top: 5rem;
+    h1{
+        @include text-style(2rem, 500, 2rem, $secondary-color);
+        text-align: center;
+    }
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+    img {
+      filter: brightness(0);
+    }
+  }
+}
