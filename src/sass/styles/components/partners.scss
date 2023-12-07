@@ -1,5 +1,5 @@
 .partners-container {
-    margin-top: 5rem;
+    margin: 10rem 0;
     h1{
         @include text-style(2rem, 500, 2rem, $secondary-color);
         text-align: center;
@@ -8,11 +8,24 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
-    align-items: center;
+    place-items: center;
     width: 100vw;
     background-color: white;
     img {
       filter: brightness(0);
     }
   }
+}
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  .partners-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  .partners {
+    grid-template-columns: repeat(2, 2fr );
+    align-self: center;
+    zoom: 0.7;
+  
+  }
+}
 }

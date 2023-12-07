@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 export default function Partners() {
   return (
     <div className="partners-container">
-    <h1>Parceiros</h1>
-      <motion.div 
-      className="partners"
-    /*   initial="hidden"
+      <h1>Parceiros</h1>
+      <motion.div
+        className="partners"
+        /*   initial="hidden"
       animate="show"
       variants={loop}
       onTap={() => {

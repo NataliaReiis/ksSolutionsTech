@@ -1,41 +1,68 @@
-.beneficts{
+.beneficts { 
+  width: 100%;
+  margin: 10rem 0;
+  display: grid;
+  place-items: center;
+  padding: 10rem 0 0 0;
+  background-color: $secondary-color;
+  border-radius: $border-radius;
+  h2 {
+    text-align: center;
+    @include text-style(1.75rem, 500, 2.5rem,  $light-text);
     width: 70%;
-    display: grid;
-    place-items: center;
     margin: 0 auto;
-    padding: 10rem 0 0 0;
-    h2{
-        text-align: center;
-        @include text-style(1.75rem, 500, 2.5rem, $text-color);
-        width: 70%;
-        margin: 0 auto;
-    }
-    .beneficts-container{
-        margin-top: 5rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5rem;
-        justify-content: center;
-        align-items: center;
+  }
+  .beneficts-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
 
-        .itens-container{
-            width: 30vw;
-            height: 40vh;
-            display: flex;
-            .image-beneficts{
-                width: 14vw;
-                height: 14vh;
-            }
-            span{
-                h1{
-                    @include text-style(1.5rem, 400, 2.5rem, $text-color);
-                }
-                p{
-                    @include text-style(1rem, 400, 1.7rem, $text-color);
-                }
-            }
-           
+    .itens-container {
+      width: 30vw;
+      height: 40vh;
+      display: flex;
+      .image-beneficts {
+        width: 14vw;
+        height: 14vh;
+      }
+      span {
+        h1 {
+          @include text-style(1.5rem, 400, 2.5rem, $light-text);
         }
+        p {
+          @include text-style(1rem, 400, 1.7rem, $light-text);
+        }
+      }
     }
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .beneficts {
+    width: auto;
+    h2 {
+      @include text-style(1.2rem, 500, 1.4rem, $text-color);
+      width: 100%;
+      padding: 1rem;
+    }
+    .beneficts-container {
+        width: 100%;
+        display: block;
+        padding: 1rem;
+      .itens-container {
+        width: 100%;
+        .image-beneficts {
+         width: auto;
+         height: 40%;
+         padding-left: 0.3rem;
+        }
+      }
+      span {
+        padding: 1rem;
     
+      }
+    }
+  }
 }
