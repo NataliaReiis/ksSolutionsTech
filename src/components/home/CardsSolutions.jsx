@@ -1,7 +1,7 @@
-import Icon1 from '../assets/img/icon1.png'
-import Icon2 from '../assets/img/icon2.png'
-import Icon3 from '../assets/img/icon3.png'
-import Icon4 from '../assets/img/icon4.png'
+import Icon2 from '../../assets/img/icon2.png'
+import Icon1 from '../../assets/img/icon1.png'
+import Icon3 from '../../assets/img/icon3.png'
+import Icon4 from '../../assets/img/icon4.png'
 
 import { Modal, Box, Typography, Button, IconButton } from '@mui/material/';
 import CloseIcon from '@mui/icons-material/Close';

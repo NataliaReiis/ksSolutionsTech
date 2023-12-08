@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
-import Beneficits from "../components/Benefits";
-import Projects from '../components/Projects';
-import CardSolutions from '../components/CardsSolutions';
+import Beneficits from "../components/home/Benefits";
+import Projects from '../components/home/Projects';
+import CardSolutions from '../components//home/CardsSolutions';
 import Footer from '../components/Footer';
-import Partners from '../components/Partners';
+import Partners from '../components/home/Partners';
 
 import ImgPrincipal from "../assets/img/ImgPrincipal.png";
 

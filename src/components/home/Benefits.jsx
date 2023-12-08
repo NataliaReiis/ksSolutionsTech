@@ -1,7 +1,7 @@
-import imgEficiencia from '../assets/img/eficienciaOperacional.jpg';
-import imgCusto from '../assets/img/custo.jpg';
-import imgDecisao from '../assets/img/decisao.jpg';
-import imgTecnologia from '../assets/img/tecnologia.jpg';
+import imgEficiencia from '../../assets/img/eficienciaOperacional.png';
+import imgCusto from '../../assets/img/custo.png';
+import imgDecisao from '../../assets/img/decisao.png';
+import imgTecnologia from '../../assets/img/tecnologia.png';
 
 
 
