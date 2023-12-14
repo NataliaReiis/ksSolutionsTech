@@ -1,0 +1,115 @@
+.contact-container {
+  // main
+  display: flex;
+  width: auto;
+  height: auto;
+
+  .contact-infos-container {
+    // Infos
+    width: 50%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    h1 {
+      @include text-style(2.45rem, 600, 2.75rem, $secondary-color);
+      width: 80%;
+      margin: 1rem;
+    }
+    .infos {
+      width: 80%;
+      margin: 1rem;
+
+      span {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0;
+        align-items: center;
+        svg {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .contact-form-container {
+    // Form
+    width: 45%;
+    height: 100%;
+    padding: 2rem;
+    background-color: $secondary-color;
+    color: white;
+    border-radius: $border-radius;
+    margin: -1rem 0 4rem 0;
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      .checkbox {
+        display: flex;
+        span {
+          input[type="checkbox"] {
+            display: none;
+          }
+
+          label.checkbox-label {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            border: 1px solid red;
+            &::before {
+              position: absolute;
+              width: 20px;
+              left: 0;
+              top: 0;
+            }
+            &::after {
+              content: "✔";
+              border: 1px solid $secondary-color;
+              visibility: hidden;
+              position: absolute;
+              left: 5px;
+              top: -1px;
+            }
+          }
+        }
+      }
+      .form-msg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 3rem 0;
+        input,
+        textarea {
+          width: 100%;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          margin: 1.55rem 0;
+          background-color: $secondary-color;
+          &:focus {
+            color: white;
+          }
+          &:not(:focus){
+            color: white;
+          }
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        button {
+          width: 30%;
+          padding: 0.85rem;
+          border-radius: $border-radius;
+          outline: none;
+          border: none;
+          background-color: $primary-color;
+          color: $secondary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

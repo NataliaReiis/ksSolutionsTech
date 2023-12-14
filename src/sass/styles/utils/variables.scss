@@ -13,8 +13,8 @@
    
 }
 ::-webkit-scrollbar {
-    background-color: $background;
-    width: 0.2rem;
+    background-color: $orange;
+    width: 0.4rem;
       @media screen and (min-width: 280px) and (max-width: 1000px) {
         padding: 0;
         &::-webkit-scrollbar {
@@ -25,4 +25,5 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: $primary-color;
+    border-radius: 10px;
 }
