@@ -11,7 +11,7 @@
       width: 60vw;
       flex-direction: column;
       justify-content: center;
-      padding: 5em 2.5em;
+      padding: 5rem 4rem;
 
       h1 {
         @include text-style(8rem, 800, 1.2em, $text-color);
@@ -21,9 +21,9 @@
         letter-spacing: 6px;
       }
       p {
-        @include text-style(1.4rem, 300, 1.6em, $text-color);
+        @include text-style(1.5rem, 400, 1.6em, $text-color);
         width: 50vw;
-        padding: 2rem 1rem 0 1rem;
+        padding: 1rem 1rem 0 1rem;
       }
 
       button {
@@ -32,20 +32,23 @@
           none,
           1px solid $orange,
           3rem,
-          10rem,
+          14rem,
           none,
-          $orange
+          $orange,
         );
+        font-size: 1.2rem;
         cursor: pointer;
         &:hover {
           @include button-style(
             none,
             1px solid $primary-color,
             3rem,
-            10rem,
+            14rem,
             none,
             $primary-color
           );
+          font-size: 1.2rem;
+
         }
         a {
           color: $text-color;
@@ -60,8 +63,8 @@
       justify-content: center;
       align-items: center;
 
-      .img {
-        width: 80%;
+      img {
+        width: 90%;
       }
     }
   }
@@ -97,7 +100,7 @@
 
 
         img {
-        zoom: 0.70; 
+        zoom: 0.7; 
 
         }
       }

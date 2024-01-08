@@ -1,13 +1,62 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Partners from "../components/home/Partners";
+import Team from '../components/about/Team'
 
+import about from "../assets/img/about.png";
+
+
+const values = [
+  {
+    title: "Visão",
+    description:
+      "Mapear/Analisar processos e rotinas x tecnologias existentes, identificar os pontos de atenção e sugerir melhorias conforme Planejamento Estratégico da Instituição e seu Plano Orçamentário",
+    image: "src/assets/img/icon5.png",
+  },
+  {
+    title: "Metodólogia",
+    description:
+      "Ser referência no mercado em que atuamos despertando em nossos clientes uma parceira de melhoria contínua estimulando o uso consciente da tecnologia dentro de um perfil sustentável.",
+    image: "src/assets/img/icon6.png",
+  },
+  {
+    title: "Missão",
+    description:
+      "Estimular em nossos clientes e parceiros uma relação com a tecnologia de forma que ela seja efetiva para suas demandas contribuindo para o crescimento e desenvolvimento do seu proposito empresarial",
+    image: "src/assets/img/icon7.png",
+  },
+];
 
 export default function About() {
-    return(
-        <>
-           <Navbar  />
-
-           <Footer />
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <div className="about-infos-container">
+        <img src={about} alt="" />
+        <div className="text-content">
+          <h1>Descubra a KS e AMPLIE seus horizontes! </h1>
+          <p>
+            A KS, que se revela como uma chave para entendimentos mais
+            profundos, não apenas abre portas, mas também amplia nossos
+            horizontes de maneiras inesperadas. Ao nos aventurarmos por esse
+            caminho de descobertas, encontramos um terreno fértil para expandir
+            nossas perspectivas e abraçar experiências enriquecedoras.
+          </p>
+          <button>Entrar em contato</button>
+        </div>
+      </div>
+      <div className="values-container">
+        {values.map((value, index) => (
+          <div key={index}>
+            <img src={value.image} alt="icons-about" />
+            <h3>{value.title}</h3>
+            <p>{value.description}</p>
+          </div>
+        ))}
+      </div>
+      <Team/>
+      <Partners/>
+      <Footer />
+    </>
+  );
 }

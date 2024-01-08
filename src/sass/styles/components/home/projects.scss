@@ -3,8 +3,6 @@
   margin:  1.5rem auto;
   width: 85%;
   height: 100vh;
- 
-
 
   .container {
     width: auto;
@@ -45,16 +43,17 @@
     padding-left: 3em;
 
     h6 {
-      @include text-style(1.25em, 600, 1rem, $orange);
-      letter-spacing: 0.6em;
+      @include text-style(1.55em, 700, 1rem, $orange);
+      letter-spacing: 0.5em;
     }
 
     h1 {
-      @include text-style(3.1rem, 500, rem, $text-color);
+      @include text-style(3.1rem, 600, rem, $text-color);
       padding-top: 0.5em;
     }
     p {
       margin-top: 1rem;
+      @include text-style(1.4rem, 400, rem, $text-color);
     }
   }
 
@@ -68,9 +67,9 @@
 
     a {
       display: inline-block;
-      font-size: 1.1em;
-      padding: 0 2em;
-      margin: 0 10px;
+      font-size: 1.3em;
+      padding: 0 2rem;
+      margin: 0 15px;
       cursor: pointer;
       color: $text-color;
     }
@@ -80,7 +79,7 @@
       border-radius: 3px;
       padding-top: 1em;
       color: $primary-color;
-      font-size: 1em;
+      font-size: 1.2em;
       transition: 0.3s ease;
     }
   }

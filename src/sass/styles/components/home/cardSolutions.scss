@@ -14,11 +14,11 @@
             width: 80%;
             margin: 0 auto;
             padding-top: 4rem ;
-            @include text-style(2rem, 300, 2.75rem, $text-color);
+            @include text-style(2.5rem, 300, 2.8rem, $text-color);
         }
         p{
-            @include text-style(1.15rem, 200, 1.45rem, $text-color);
-            width: 60%;
+            @include text-style(1.55rem, 200, 1.9rem, $text-color);
+            width: 80%;
             padding-top: 2rem;
         }
     }

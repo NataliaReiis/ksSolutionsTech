@@ -8,7 +8,7 @@
   border-radius: $border-radius;
   h2 {
     text-align: center;
-    @include text-style(1.75rem, 500, 2.5rem,  $light-text);
+    @include text-style(2.3rem, 500, 2.8rem,  $light-text);
     width: 70%;
     margin: 0 auto;
   }
@@ -21,19 +21,20 @@
     align-items: center;
 
     .itens-container {
-      width: 30vw;
+      width: 40vw;
       height: 40vh;
       display: flex;
       .image-beneficts {
         width: 14vw;
         height: 14vh;
+        padding: 0 1rem;
       }
       span {
         h1 {
-          @include text-style(1.5rem, 400, 2.5rem, $light-text);
+          @include text-style(1.5rem, 600, 2.5rem, $light-text);
         }
         p {
-          @include text-style(1rem, 400, 1.7rem, $light-text);
+          @include text-style(1.2rem, 300, 1.7rem, $light-text);
         }
       }
     }
