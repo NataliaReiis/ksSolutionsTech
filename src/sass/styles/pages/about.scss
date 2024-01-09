@@ -1,0 +1,59 @@
+.about-infos-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+
+  .text-content {
+    width: 50vw;
+
+    h1 {
+      margin: 2rem 0;
+      @include text-style(3.75rem, 700, 4rem, $secondary-color);
+    }
+
+    p {
+      margin: 2rem 0;
+      @include text-style(1.3rem, 400, 2.5rem, $text-color)
+    }
+
+    button {
+      @include button-style(
+        none,
+        none,
+        3rem,
+        15rem,
+        $secondary-color,
+        $light-text
+      );
+      font-size: 1.25rem;
+    }
+  }
+}
+.values-container{
+    display: flex;
+    justify-content: center;
+    margin: 10rem 2rem;
+    background-color: $orange;
+    border-radius: 10px;
+
+    .values-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 3rem 1rem;
+
+        img{
+            width: 10rem;
+        }
+        
+        h3{
+            @include text-style(2.75rem, 600, 2rem, $light-text);
+            margin: 2rem 0;
+        }
+        p{
+            @include text-style(1.2rem, 300, 2rem, $light-text);
+        }
+    }
+}

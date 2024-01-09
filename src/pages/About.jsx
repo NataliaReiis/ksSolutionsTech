@@ -47,7 +47,7 @@ export default function About() {
       </div>
       <div className="values-container">
         {values.map((value, index) => (
-          <div key={index}>
+          <div className="values-item" key={index}>
             <img src={value.image} alt="icons-about" />
             <h3>{value.title}</h3>
             <p>{value.description}</p>
