@@ -5,12 +5,11 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 export default function Form() {
-
-  const [state, handleSubmit] = useForm('xnqkevvd', {
-      redirect: false, 
+  const [state, handleSubmit] = useForm("xwkgpeay", {
+    redirect: false,
   }); /* Formulario */
-  const [showMensager, setShowMensager] = useState(false)
-  
+  const [showMensager, setShowMensager] = useState(false);
+
   const submitForm = async (event) => {
     event.preventDefault();
     await handleSubmit(event);
@@ -42,7 +41,7 @@ export default function Form() {
         </div>
       </div>
       <div className="contact-form-container">
-   <form onSubmit={submitForm} className="form">
+        <form onSubmit={submitForm} className="form">
           <h3>Como podemos ajudar o seu negócio? Nos envie uma mensagem:</h3>
           <div className="form-msg">
             <label htmlFor="name">Seu nome:</label>
@@ -69,7 +68,7 @@ export default function Form() {
               Enviar mensagem
             </button>
           </div>
-          {showMensager && <p>A ks Agradeçe a sua mensagem!</p>}
+          {showMensager && <p>Mensagem enviada com sucesso! A ks Agradeçe o contato!</p>}
         </form>
       </div>
     </div>

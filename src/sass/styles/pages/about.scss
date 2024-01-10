@@ -13,12 +13,12 @@
 
     h1 {
       margin: 2rem 0;
-      @include text-style(3.75rem, 700, 4rem, $secondary-color);
+      @include text-style(3.15rem, 700, 4rem, $secondary-color);
     }
 
     p {
       margin: 2rem 0;
-      @include text-style(1.3rem, 400, 2.5rem, $text-color)
+      @include text-style(1.3rem, 400, 2.6rem, $text-color)
     }
 
     button {
@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     margin: 10rem 2rem;
+    padding: 5rem;
     background-color: $secondary-color;
     border-radius: 10px;
 
@@ -57,12 +58,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 3rem 1rem;
+        margin: 3rem 2.2rem;
 
         img{
-            width: 8rem;
+            width: 7rem;
           &:hover{
             scale: 1.2;
             transition: 2s ease-in-out;
@@ -70,7 +69,7 @@
         }
         
         h3{
-            @include text-style(2.55rem, 600, 2rem, $light-text);
+            @include text-style(2.3rem, 600, 2rem, $light-text);
             margin: 2rem 0;
         }
         p{
@@ -128,9 +127,10 @@
     width: 100%;
     flex-direction: column;
     margin: 10rem 0;
-
+    text-align: center;
     .values-item{
-      
+      text-align: center;
+      align-items: center;
     }
   }
 }

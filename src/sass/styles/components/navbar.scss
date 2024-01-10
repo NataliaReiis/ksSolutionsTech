@@ -6,6 +6,7 @@
   .brand {
     img {
       zoom: 0.9;
+      padding-top: 2rem;
     }
   }
 
@@ -71,6 +72,7 @@
     height: auto;
     position: relative;
     z-index: 40;
+    align-items: center;
     .brand{
       img{
        zoom: 0.7;

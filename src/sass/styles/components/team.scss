@@ -26,7 +26,7 @@
       border: 1px solid $secondary-color;
       border-radius: 10px;
       padding: 1rem;
-      box-shadow:  5px 10px 20px 2px #021e28;
+      box-shadow:  3px 5px 20px 1px $secondary-color;
       height: auto;
       .foto img {
         width: 95px;
@@ -76,10 +76,32 @@
 @media screen and (min-width: 280px) and (max-width: 1080px) {
     .scroll-container{
         .scroll-content{
+            overflow-y: auto; 
+            -webkit-overflow-scrolling: touch;
             .section{
-                width: 80vw;
+                margin: 2rem;
+                width:400px;
+               
+               .description-colabs{
+
+                h3{
+                    @include text-style(1.4rem, 600, 2rem, $secondary-color);
+
+                }
+                h4{
+                    @include text-style(1.2rem, 500, 2rem, $orange);
+                    margin: 0.5rem 0;
+                }
+                p{
+                    @include text-style(1rem, 400, 1.6rem, $text-color);
+
+                }
+               }
+
             }
         }
     }
-    
+    .button-scroll {
+        display: none;
+    }
 }
