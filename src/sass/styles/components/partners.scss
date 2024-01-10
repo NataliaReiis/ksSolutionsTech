@@ -1,8 +1,8 @@
-.partners-container {
+.partners {
     margin: 10rem 0;
     h1{
-        @include text-style(2rem, 500, 2rem, $secondary-color);
-        text-align: center;
+      @include text-style(2.50rem, 400, 2rem, $secondary-color);
+      text-align: center;
     }
   .partners {
     display: grid;

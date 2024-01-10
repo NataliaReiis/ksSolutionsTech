@@ -34,7 +34,7 @@ export default function CardSolutions() {
    };
 
    return (
-     <div className='solutions-Projects'>
+     <div className='card-solutions'>
           
           <div className="solutions-container">
            <div className="text-container">

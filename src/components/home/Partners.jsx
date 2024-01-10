@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function Partners() {
   return (
-    <div className="partners-container">
+    <div className="partners">
       <h1>Parceiros</h1>
       <motion.div
         className="partners"

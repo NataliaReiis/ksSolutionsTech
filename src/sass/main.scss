@@ -11,10 +11,13 @@
 @import "./styles/pages/about.scss";
 
 /* HOME COMPONETS */
-@import "./styles/components/home/cardSolutions.scss";
-@import "./styles/components/home/projects.scss";
-@import "./styles/components/home/beneficts.scss";
-@import "./styles/components/home/partners.scss";
+@import "./styles/components/cardSolutions.scss";
+@import "./styles/components/projects.scss";
+@import "./styles/components/beneficts.scss";
+@import "./styles/components/partners.scss";
 
 /* CONTACT COMPONENTS */
-@import "styles/components/contact/form.scss";
+@import "styles/components/form.scss";
+
+/* ABOUT COMPONENTS */
+@import "./styles/components/team.scss";

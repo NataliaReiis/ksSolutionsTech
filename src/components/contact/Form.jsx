@@ -1,14 +1,23 @@
 import { useForm, ValidationError } from "@formspree/react";
-
+import { useState } from "react";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 export default function Form() {
-  const [state, handleSubmit] = useForm("xnqkevvd"); /* Formulario */
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+
+  const [state, handleSubmit] = useForm('xnqkevvd', {
+      redirect: false, 
+  }); /* Formulario */
+  const [showMensager, setShowMensager] = useState(false)
+  
+  const submitForm = async (event) => {
+    event.preventDefault();
+    await handleSubmit(event);
+    if (state.succeeded) {
+      setShowMensager(true);
+    }
+  };
 
   return (
     <div className="contact-container">
@@ -33,14 +42,8 @@ export default function Form() {
         </div>
       </div>
       <div className="contact-form-container">
-        <form onSubmit={handleSubmit} className="form">
-          <h3>Tem interesse em...</h3>
-          <div className="checkbox">
-            <span>
-              <input type="checkbox" />
-              <label className="checkbox-label">teste</label>
-            </span>
-          </div>
+   <form onSubmit={submitForm} className="form">
+          <h3>Como podemos ajudar o seu negócio? Nos envie uma mensagem:</h3>
           <div className="form-msg">
             <label htmlFor="name">Seu nome:</label>
             <input id="name" type="text" name="name" />
@@ -63,9 +66,10 @@ export default function Form() {
               errors={state.errors}
             />
             <button type="submit" disabled={state.submitting}>
-              Enviar menssagem
+              Enviar mensagem
             </button>
           </div>
+          {showMensager && <p>A ks Agradeçe a sua mensagem!</p>}
         </form>
       </div>
     </div>

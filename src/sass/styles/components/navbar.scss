@@ -40,7 +40,7 @@
     button {
       @include button-style(
         none,
-        none,
+        1px solid transparent,
         1.3rem,
         100%,
         $secondary-color,
@@ -49,6 +49,16 @@
       cursor: pointer;
       padding: 1rem;
       font-size: 1.1rem;
+      &:hover{
+        @include button-style(
+          none,
+          1px solid $primary-color,
+          1.3rem,
+          100%,
+          transparent,
+          $secondary-color
+        );
+      }
     }
   }
 }
@@ -59,8 +69,8 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
-    z-index: 10;
-
+    position: relative;
+    z-index: 40;
     .toggle {
       display: block;
       z-index: 25;

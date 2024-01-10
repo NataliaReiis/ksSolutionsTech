@@ -76,7 +76,8 @@
       .container-home {
         position: absolute;
         width: 100%;
-        padding: 2rem;
+        padding: 2rem;  
+      
         h1 {
           @include text-style(5rem, 600, 1.2em, $text-color);
         }
@@ -92,15 +93,15 @@
       }
       .image-principal-container {
         height: auto;
-        width: 100%;
+        width: auto;
         display: flex;
         justify-content: end;
         align-items:end;
-        z-index: 10;
+        
 
 
         img {
-        zoom: 0.7; 
+        zoom: 0.8; 
 
         }
       }

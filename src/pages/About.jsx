@@ -4,7 +4,10 @@ import Partners from "../components/home/Partners";
 import Team from '../components/about/Team'
 
 import about from "../assets/img/about.png";
+import {Link} from "react-router-dom"
 
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const values = [
   {
@@ -28,6 +31,31 @@ const values = [
 ];
 
 export default function About() {
+
+  useEffect(() => { // Animação scroll
+    const animationsScroll = () => {
+
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2000,
+        reset: false
+      });
+      sr.reveal(`
+        nav, .about-infos-container,.values-container,.scroll-container,.partners,footer
+      `,
+        {interval: 500}
+      );
+    };
+    animationsScroll()
+  }, []);
+
+  window.setTimeout(() => {
+    const about = document.getElementsByClassName("about-infos-container");
+    about[0].computedStyleMap.transform = "none";
+    const nav = document.getElementsByName("nav");
+    nav[0].style.transform = "none";
+  }, 1500);
   return (
     <>
       <Navbar />
@@ -42,7 +70,10 @@ export default function About() {
             caminho de descobertas, encontramos um terreno fértil para expandir
             nossas perspectivas e abraçar experiências enriquecedoras.
           </p>
+          <Link to="/contact">
           <button>Entrar em contato</button>
+          </Link>
+         
         </div>
       </div>
       <div className="values-container">

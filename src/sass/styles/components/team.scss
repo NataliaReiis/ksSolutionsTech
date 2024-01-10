@@ -1,0 +1,83 @@
+.title-colab {
+    text-align: center;
+    margin: 4rem 0;
+    @include text-style(2.50rem, 400, 2rem, $secondary-color);
+
+
+}
+
+.scroll-container {
+    overflow-x: hidden;
+    width: auto;
+    margin-left: 10%;
+    padding-top: 2em;
+
+
+    .scroll-content {
+        position: relative;
+        display: grid;
+        grid-gap: 100px;
+        grid-auto-flow: column;
+        transition: transform 0.5s ease-in;
+        z-index: 2;
+
+
+        .section {
+            width: 25vw;
+            display: flex;
+            padding-right: 15%;
+
+            .foto img {
+                width: 100px;
+                margin-right: 0.8em;
+            }
+
+            .description-colabs {
+                margin-left: 0.9em;  
+                width: 100%;
+
+                h3 {
+                    padding-top: 0.5em;
+                    color: #101D44;
+                    width: auto;
+                }
+
+                h4 {
+                    font-size: 0.8em;
+                    padding-top: 0.5em;
+                    color: #E37423;
+                }
+
+                p {
+                    padding-top: 0.5em;
+                    font-size: 0.8em;
+                    width: 120%;
+                }
+            }
+
+
+
+        }
+
+    }
+
+}
+
+.button-scroll {
+    width: auto;
+    margin: 10vh;
+    margin-left: 9%;
+    margin-bottom: 8%;
+
+
+    button {
+        height: 4em;
+        margin: 0.55em;
+        padding: 1em;
+        border-radius: 150px;
+        border: none;
+        background-color: #C26522;
+        cursor: pointer;
+
+    }
+}
