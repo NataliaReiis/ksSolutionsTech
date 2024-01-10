@@ -21,7 +21,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Analise e implantação',
+      title: 'Análise e implantação',
       description: 'Desvendando Estratégias: Análise e Implementação em Foco',
       txt: 'Nossa abordagem começa com uma análise meticulosa, identificando oportunidades de melhoria e áreas críticas para intervenção. Com insights valiosos em mãos, nossa equipe experiente desenvolve um plano de implantação personalizado, garantindo uma transição suave e eficaz',
       image: 'public/Analytics.gif',

@@ -10,7 +10,7 @@ import ImgPrincipal from "../assets/img/ImgPrincipal.png";
 import { motion } from "framer-motion";
 import { scaleVariant } from "../utils/animations";
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 
 export default function Home() {
@@ -53,6 +53,7 @@ export default function Home() {
             Custos e Leve Sua Empresa para o Próximo Nível Tecnológico.
           </p>
           <div>
+            <Link to='/contact'>
             <motion.button
               whileTap="tap"
               whileHover="hover"
@@ -60,6 +61,8 @@ export default function Home() {
             >
               Entrar em contato{" "}
             </motion.button>
+            </Link>
+            
           </div>
         </div>
         <div className="image-principal-container">

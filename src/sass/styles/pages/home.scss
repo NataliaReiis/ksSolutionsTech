@@ -6,13 +6,13 @@
     height: 100vh;
     background-color: $background;
 
+
     .container-home {
       height: auto;
       width: 60vw;
       flex-direction: column;
       justify-content: center;
       padding: 5rem 4rem;
-
       h1 {
         @include text-style(8rem, 800, 1.2em, $text-color);
       }
@@ -97,11 +97,11 @@
         display: flex;
         justify-content: end;
         align-items:end;
-        
-
-
+        position: relative;
+        top: 5rem;
+        left: 3rem;
         img {
-        zoom: 0.8; 
+        zoom: 0.9; 
 
         }
       }

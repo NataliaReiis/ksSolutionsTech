@@ -73,7 +73,25 @@
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px){
-    .content-card{
-        margin-top: 3rem ;
+    .card-solutions{
+        margin-top: 6rem ;
+
+        .text-container{
+
+            h2{
+                @include text-style(1.6rem, 500, 2rem, $text-color);
+
+            }
+            p{
+                @include text-style(1rem, 400, 1.5rem, $text-color);
+            }
+        }
+        
+        .container-card{
+
+            .content-card{
+                margin: 2rem;
+            }
+        }
     }
 }

@@ -13,7 +13,7 @@ export default function Partners() {
     <div className="partners">
       <h1>Parceiros</h1>
       <motion.div
-        className="partners"
+        className="partners-content"
         /*   initial="hidden"
       animate="show"
       variants={loop}

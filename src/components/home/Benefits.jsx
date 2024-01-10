@@ -1,7 +1,7 @@
-import imgEficiencia from '../../assets/img/eficienciaOperacional.png';
-import imgCusto from '../../assets/img/custo.png';
-import imgDecisao from '../../assets/img/decisao.png';
-import imgTecnologia from '../../assets/img/tecnologia.png';
+import imgEficiencia from '../../assets/svg/eficiencia.svg';
+import imgCusto from '../../assets/svg/custo.svg';
+import imgAgilidade from '../../assets/svg/agilidade.svg';
+import imgTecnologia from '../../assets/svg/newTech.svg';
 
 
 
@@ -27,7 +27,7 @@ export default function Beneficts() {
                     </span>
                 </div>
                 <div className="itens-container">
-                    <img className='image-beneficts'  src={imgDecisao} alt="" />
+                    <img className='image-beneficts'  src={imgAgilidade} alt="" />
                     <span className='description'>
                         <h1>Adoção de Tecnologias Inovadoras</h1>
                         <p> Consultores podem recomendar a implementação de novas tecnologias que automatizem processos e tragam inovação para a empresa, melhorando a competitividade no mercado.</p>

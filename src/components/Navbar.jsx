@@ -88,7 +88,10 @@ export default function NavBar() {
         </motion.ul>
       </div>
       <div className="button-especialista">
+        <Link to="https://api.whatsapp.com/send?phone=557121371747" target="_blank">
         <button>Falar com um especialista</button>
+        </Link>
+        
       </div>
     </nav>
   );

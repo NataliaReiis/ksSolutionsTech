@@ -1,4 +1,4 @@
-.beneficts { 
+.beneficts {
   width: 100%;
   margin: 10rem 0;
   display: grid;
@@ -8,7 +8,7 @@
   border-radius: $border-radius;
   h2 {
     text-align: center;
-    @include text-style(2.3rem, 500, 2.8rem,  $light-text);
+    @include text-style(2.3rem, 500, 2.8rem, $light-text);
     width: 70%;
     margin: 0 auto;
   }
@@ -44,25 +44,29 @@
   .beneficts {
     width: auto;
     h2 {
-      @include text-style(1.2rem, 500, 1.4rem, $text-color);
+      @include text-style(1.6rem, 500, 2rem, $light-text);
       width: 100%;
       padding: 1rem;
     }
     .beneficts-container {
-        width: 100%;
-        display: block;
-        padding: 1rem;
+      width: 100%;
+      display: block;
+      padding: 1rem;
       .itens-container {
         width: 100%;
         .image-beneficts {
-         width: auto;
-         height: 40%;
-         padding-left: 0.3rem;
+          width: auto;
+          height: 40%;
+          padding-left: 0.3rem;
         }
-      }
-      span {
-        padding: 1rem;
-    
+        .description {
+          h1 {
+            @include text-style(1.5rem, 500, 2.4rem, $light-text);
+          }
+          p {
+            @include text-style(1rem, 400, 1.8rem, $light-text);
+          }
+        }
       }
     }
   }

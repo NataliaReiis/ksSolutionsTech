@@ -114,10 +114,14 @@
       padding-top: 1em;
       padding-left: 3em;
       h6 {
-        @include text-style(1rem, 600, 1.1rem, $orange);
+        @include text-style(1.3rem, 600, 1.1rem, $orange);
       }
       h1 {
-        @include text-style(1.5rem, 500, rem, $text-color);
+        @include text-style(1.5rem, 500, 2.4rem, $text-color);
+      }
+      p{
+        @include text-style(1rem, 400, 1.8rem, $text-color);
+
       }
     }
 
