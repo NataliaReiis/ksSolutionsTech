@@ -78,3 +78,59 @@
         }
     }
 }
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .about-infos-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 100%;
+    }
+    .text-content {
+      width: 85vw;
+  
+      h1 {
+        margin: 2rem 0;
+        @include text-style(2.3rem, 700, 4rem, $secondary-color);
+      }
+  
+      p {
+        margin: 2rem 0;
+        @include text-style(1.3rem, 400, 2.5rem, $text-color)
+      }
+  
+      button {
+        @include button-style(
+          none,
+          1px solid transparent,
+          3rem,
+          15rem,
+          $secondary-color,
+          $light-text
+        );
+        font-size: 1.25rem;
+        cursor: pointer;
+        &:hover{
+          @include button-style(
+            none,
+            1px solid $primary-color,
+            3rem,
+            15rem,
+            transparent,
+            $secondary-color
+          );
+        }
+      }
+    }
+  }
+  .values-container{
+    width: 100%;
+    flex-direction: column;
+    margin: 10rem 0;
+
+    .values-item{
+      
+    }
+  }
+}

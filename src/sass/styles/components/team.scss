@@ -1,83 +1,85 @@
 .title-colab {
-    text-align: center;
-    margin: 4rem 0;
-    @include text-style(2.50rem, 400, 2rem, $secondary-color);
-
-
+  text-align: center;
+  margin: 4rem 0;
+  @include text-style(2.5rem, 400, 2rem, $secondary-color);
 }
 
 .scroll-container {
-    overflow-x: hidden;
-    width: auto;
-    margin-left: 10%;
-    padding-top: 2em;
+  overflow-x: hidden;
+  width: auto;
+  margin-left: 10%;
+  padding-top: 2em;
 
+  .scroll-content {
+    position: relative;
+    display: grid;
+    grid-gap: 100px;
+    grid-auto-flow: column;
+    transition: transform 0.5s ease-in;
+    z-index: 2;
+    margin: 2rem;
 
-    .scroll-content {
-        position: relative;
-        display: grid;
-        grid-gap: 100px;
-        grid-auto-flow: column;
-        transition: transform 0.5s ease-in;
-        z-index: 2;
+    .section {
+      width: 35vw;
+      display: flex;
+      padding-right: 15%;
+      border: 1px solid $secondary-color;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow:  5px 10px 20px 2px #021e28;
+      height: auto;
+      .foto img {
+        width: 95px;
+        margin-right: 0.8em;
+        border-radius: 50px;
+        height: 100px;
+      }
 
+      .description-colabs {
+        margin-left: 0.9em;
+        width: auto;
 
-        .section {
-            width: 25vw;
-            display: flex;
-            padding-right: 15%;
-
-            .foto img {
-                width: 100px;
-                margin-right: 0.8em;
-            }
-
-            .description-colabs {
-                margin-left: 0.9em;  
-                width: 100%;
-
-                h3 {
-                    padding-top: 0.5em;
-                    color: #101D44;
-                    width: auto;
-                }
-
-                h4 {
-                    font-size: 0.8em;
-                    padding-top: 0.5em;
-                    color: #E37423;
-                }
-
-                p {
-                    padding-top: 0.5em;
-                    font-size: 0.8em;
-                    width: 120%;
-                }
-            }
-
-
-
+        h3 {
+          width: auto;
+          @include text-style(1.6rem, 600, 2rem, $secondary-color);
         }
 
-    }
+        h4 {
+          @include text-style(1.2rem, 500, 2rem, $orange);
+          margin: 1rem 0;
+        }
 
+        p {
+          @include text-style(1.1rem, 400, 1.6rem, $text-color);
+        }
+      }
+    }
+  }
 }
 
 .button-scroll {
-    width: auto;
-    margin: 10vh;
-    margin-left: 9%;
-    margin-bottom: 8%;
+  width: auto;
+  margin: 10vh;
+  margin-left: 9%;
+  margin-bottom: 8%;
 
-
-    button {
-        height: 4em;
-        margin: 0.55em;
-        padding: 1em;
-        border-radius: 150px;
-        border: none;
-        background-color: #C26522;
-        cursor: pointer;
-
+  button {
+    height: 4em;
+    margin: 0.55em;
+    padding: 1em;
+    border-radius: 150px;
+    border: none;
+    background-color: #c26522;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .scroll-container{
+        .scroll-content{
+            .section{
+                width: 80vw;
+            }
+        }
     }
+    
 }
