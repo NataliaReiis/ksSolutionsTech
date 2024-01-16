@@ -1,12 +1,11 @@
 .home {
-  height: 100%;
-
+  height: auto;
+  width: auto;
+  padding-top: 5rem;
   .main-container {
     display: flex;
     height: 100vh;
     background-color: $background;
-
-
     .container-home {
       height: auto;
       width: 60vw;

@@ -41,39 +41,40 @@ export default function Home() {
   }, 1500);
 
   return (
-    <div className="home">
+    <>
       <Navbar />
-      <div className="main-container">
-        <div className="container-home">
-          <h2>Gestão de Processos e </h2>
-          <h1>Tecnologia</h1>
-          <p>
-            Descubra os Benefícios da Consultoria em Gestão de Processos e
-            Automação Robótica: Potencialize a Eficiência Operacional, Reduza
-            Custos e Leve Sua Empresa para o Próximo Nível Tecnológico.
-          </p>
-          <div>
-            <Link to='/contact'>
-            <motion.button
-              whileTap="tap"
-              whileHover="hover"
-              variants={scaleVariant}
-            >
-              Entrar em contato{" "}
-            </motion.button>
-            </Link>
-            
+      <div className="home">
+        <div className="main-container">
+          <div className="container-home">
+            <h2>Gestão de Processos e </h2>
+            <h1>Tecnologia</h1>
+            <p>
+              Descubra os Benefícios da Consultoria em Gestão de Processos e
+              Automação Robótica: Potencialize a Eficiência Operacional, Reduza
+              Custos e Leve Sua Empresa para o Próximo Nível Tecnológico.
+            </p>
+            <div>
+              <Link to="/contact">
+                <motion.button
+                  whileTap="tap"
+                  whileHover="hover"
+                  variants={scaleVariant}
+                >
+                  Entrar em contato{" "}
+                </motion.button>
+              </Link>
+            </div>
+          </div>
+          <div className="image-principal-container">
+            <img src={ImgPrincipal} alt="" />
           </div>
         </div>
-        <div className="image-principal-container">
-          <img src={ImgPrincipal} alt="" />
-        </div>
+        <CardSolutions />
+        <Beneficits />
+        <Projects />
+        <Partners />
+        <Footer />
       </div>
-      <CardSolutions />
-      <Beneficits />
-      <Projects />
-      <Partners />
-      <Footer />
-    </div>
+    </>
   );
 }

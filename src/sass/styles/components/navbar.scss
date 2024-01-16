@@ -1,12 +1,15 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  align-self: center;
+  background-color: $background;
+  box-shadow: 0 3px 5px gray;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
   .brand {
     img {
       zoom: 0.9;
-      padding-top: 2rem;
     }
   }
 
@@ -26,8 +29,7 @@
 
       li {
         margin: 1em 3em;
-        @include text-style(1.25rem, 500, 1em, $text-color);
-        padding-bottom: 0.75em;
+        @include text-style(1.15rem, 500, 1em, $text-color);
         border: 1px solid transparent;
         &:hover {
           border-bottom: 1px solid $primary-color;
@@ -37,7 +39,6 @@
   }
   .button-especialista {
     display: flex;
-    margin: 0 1rem;
     button {
       @include button-style(
         none,
