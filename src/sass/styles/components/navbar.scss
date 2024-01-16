@@ -28,12 +28,21 @@
       justify-content: center;
 
       li {
-        margin: 1em 3em;
+        margin: 1rem;
         @include text-style(1.15rem, 500, 1em, $text-color);
-        border: 1px solid transparent;
+        
+
         &:hover {
-          border-bottom: 1px solid $primary-color;
+          color: $primary-color;
         }
+        span{
+          align-items: center;
+          padding: 10px;
+        }
+       .icon-link{
+        display: none;
+       }
+       
       }
     }
   }
@@ -74,6 +83,7 @@
     position: relative;
     z-index: 40;
     align-items: center;
+
     .brand{
       img{
        zoom: 0.7;
@@ -116,11 +126,18 @@
         transition: 0.5s ease-in-out;
 
         li {
-          z-index: 25;
           color: $light-text;
           padding: 1rem 0;
+          display: flex;
           &:hover{
             border: 1px solid transparent;
+          }
+          .icon-link{
+            display: block;
+           }
+          span{
+            align-items: center;
+            padding: 5px;
           }
         }
       }

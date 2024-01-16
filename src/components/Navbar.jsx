@@ -4,6 +4,13 @@ import { scaleVariant } from "../utils/animations";
 
 import { motion } from "framer-motion";
 import IconButton from "@mui/material/IconButton";
+import { FiGrid } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
+
+
+import { GoHome } from "react-icons/go";
+import { FaRegLightbulb } from "react-icons/fa";
+
 
 /* import WbSunnyIcon from '@mui/icons-material/WbSunny';
  */
@@ -55,7 +62,12 @@ export default function NavBar() {
               whileHover="hover"
               variants={scaleVariant}
             >
-              Home
+              <span className="icon-link">
+                <GoHome />
+              </span>
+              <span>
+                 Home
+              </span>
             </motion.li>
           </Link>
           <Link to="/solutions">
@@ -64,7 +76,13 @@ export default function NavBar() {
               whileHover="hover"
               variants={scaleVariant}
             >
-              Soluções KS
+              <span className="icon-link">
+             < FaRegLightbulb/>
+              </span>
+              <span>
+                 Soluções KS
+              </span>
+             
             </motion.li>
           </Link>
           <Link to="/about">
@@ -73,7 +91,12 @@ export default function NavBar() {
               whileHover="hover"
               variants={scaleVariant}
             >
-              Sobre
+              <span className="icon-link">
+                <FiGrid />
+              </span>
+              <span>
+                Sobre
+              </span>
             </motion.li>
           </Link>
           <Link to="/contact">
@@ -82,7 +105,12 @@ export default function NavBar() {
               whileHover="hover"
               variants={scaleVariant}
             >
-              Contato
+              <span className="icon-link">
+               <FiMail />
+              </span>
+              <span>
+                Contato
+              </span>
             </motion.li>
           </Link>
         </motion.ul>
