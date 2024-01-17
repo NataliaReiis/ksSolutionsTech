@@ -9,24 +9,28 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
+import visao from '../assets/img/icon5.png'
+import metodologia from '../assets/img/icon6.png'
+import missao from '../assets/img/icon7.png'
+
 const values = [
   {
     title: "Visão",
     description:
       "Mapear/Analisar processos e rotinas x tecnologias existentes, identificar os pontos de atenção e sugerir melhorias conforme Planejamento Estratégico da Instituição e seu Plano Orçamentário",
-    image: "src/assets/img/icon5.png",
+    image: visao,
   },
   {
     title: "Metodólogia",
     description:
       "Ser referência no mercado em que atuamos despertando em nossos clientes uma parceira de melhoria contínua estimulando o uso consciente da tecnologia dentro de um perfil sustentável.",
-    image: "src/assets/img/icon6.png",
+    image: metodologia,
   },
   {
     title: "Missão",
     description:
       "Estimular em nossos clientes e parceiros uma relação com a tecnologia de forma que ela seja efetiva para suas demandas contribuindo para o crescimento e desenvolvimento do seu proposito empresarial",
-    image: "src/assets/img/icon7.png",
+    image: missao,
   },
 ];
 

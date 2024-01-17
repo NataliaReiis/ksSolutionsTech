@@ -6,11 +6,10 @@ import { motion } from "framer-motion";
 import IconButton from "@mui/material/IconButton";
 import { FiGrid } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
-
+import { FaWhatsapp } from "react-icons/fa6";
 
 import { GoHome } from "react-icons/go";
 import { FaRegLightbulb } from "react-icons/fa";
-
 
 /* import WbSunnyIcon from '@mui/icons-material/WbSunny';
  */
@@ -65,9 +64,7 @@ export default function NavBar() {
               <span className="icon-link">
                 <GoHome />
               </span>
-              <span>
-                 Home
-              </span>
+              <span>Home</span>
             </motion.li>
           </Link>
           <Link to="/solutions">
@@ -77,12 +74,9 @@ export default function NavBar() {
               variants={scaleVariant}
             >
               <span className="icon-link">
-             < FaRegLightbulb/>
+                <FaRegLightbulb />
               </span>
-              <span>
-                 Soluções KS
-              </span>
-             
+              <span>Soluções KS</span>
             </motion.li>
           </Link>
           <Link to="/about">
@@ -94,9 +88,7 @@ export default function NavBar() {
               <span className="icon-link">
                 <FiGrid />
               </span>
-              <span>
-                Sobre
-              </span>
+              <span>Sobre</span>
             </motion.li>
           </Link>
           <Link to="/contact">
@@ -106,22 +98,21 @@ export default function NavBar() {
               variants={scaleVariant}
             >
               <span className="icon-link">
-               <FiMail />
+                <FiMail />
               </span>
-              <span>
-                Contato
-              </span>
+              <span>Contato</span>
             </motion.li>
           </Link>
+          <div className="button-especialista">
+            <Link
+              to="https://api.whatsapp.com/send?phone=557121371747"
+              target="_blank"
+            >
+              
+              <button><FaWhatsapp />Falar com especialista</button>
+            </Link>
+          </div>
         </motion.ul>
-      </div>
-      <div className="button-especialista">
-        <Link
-          to="https://api.whatsapp.com/send?phone=557121371747"
-          target="_blank"
-        >
-          <button>Falar com um especialista</button>
-        </Link>
       </div>
     </nav>
   );

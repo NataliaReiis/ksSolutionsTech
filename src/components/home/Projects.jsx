@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+import innovation from '../../assets/svg/innovation-1.svg';
+import extraction from '../../assets/svg/extraction-2.svg'; 
+import analytics from '../../assets/svg/analytics-3.svg';
 export default function Projects() {
   const [activeSection, setActiveSection] = useState(0);
 
@@ -9,7 +12,7 @@ export default function Projects() {
       title: 'Gestão de Processos ',
       description: 'Rumo à Excelência na Organização Empresarial: Otimizando Fluxos e Desempenho"',
       txt: 'Transforme a maneira como sua empresa opera com nossos serviços especializados em Gestão de Processos. Nossa abordagem personalizada visa otimizar cada aspecto das operações, desde a análise até a implementação, garantindo eficiência e agilidade.',
-      image: 'src/assets/svg/innovation-1.svg',
+      image:  innovation,
     },
 
     {
@@ -17,14 +20,14 @@ export default function Projects() {
       title: 'Implantação ERP e Robô',
       description: 'Automatizando a Gestão Empresarial: Inovação com ERP e Soluções Robóticas',
       txt:"Oferecemos serviços especializados para impulsionar seu negócio, combinando implantação de ERP e automação robótica. Transforme processos, ganhe agilidade e alcance novos patamares de eficiência com nossa expertise. Potencialize seu sucesso com soluções inovadoras e personalizadas", 
-      image: 'src/assets/svg/extraction-2.svg',
+      image: extraction,
     },
     {
       id: 2,
       title: 'Análise e implantação',
       description: 'Desvendando Estratégias: Análise e Implementação em Foco',
       txt: 'Nossa abordagem começa com uma análise meticulosa, identificando oportunidades de melhoria e áreas críticas para intervenção. Com insights valiosos em mãos, nossa equipe experiente desenvolve um plano de implantação personalizado, garantindo uma transição suave e eficaz',
-      image: 'src/assets/svg/analytics-3.svg',
+      image:  analytics,
     },
   ];
 

@@ -31,79 +31,73 @@
       li {
         margin: 1rem 3rem;
         @include text-style(1.15rem, 500, 1em, $text-color);
-        
 
         &:hover {
           color: $primary-color;
         }
-        span{
+        span {
           align-items: center;
           padding: 10px;
         }
-       .icon-link{
-        display: none;
-       }
-       
+        .icon-link {
+          display: none;
+        }
       }
-    }
-  }
-  .button-especialista {
-    display: flex;
-    button {
-      @include button-style(
-        none,
-        1px solid transparent,
-        1.3rem,
-        100%,
-        $secondary-color,
-        $light-text
-      );
-      cursor: pointer;
-      padding: 1rem;
-      font-size: 1.1rem;
-      &:hover{
-        @include button-style(
-          none,
-          1px solid $primary-color,
-          1.3rem,
-          100%,
-          transparent,
-          $secondary-color
-        );
+      .button-especialista {
+        display: flex;
+        button {
+          display: flex;
+          align-items: center;
+          @include button-style(
+            none,
+            1px solid transparent,
+            1.3rem,
+            100%,
+            green,
+            $light-text
+          );
+          cursor: pointer;
+          padding: 1rem;
+          font-size: 1.1rem;
+          &:hover {
+            @include button-style(
+              none,
+              1px solid $primary-color,
+              1.3rem,
+              100%,
+              transparent,
+              $secondary-color
+            );
+          }
+          svg {
+            margin: 0.2rem;
+          }
+        }
       }
     }
   }
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-  .navbar,
-  nav {
+  .navbar {
     justify-content: space-between;
     width: 100%;
     height: auto;
     position: relative;
     align-items: center;
 
-    .brand{
-      img{
-       zoom: 0.7;
-       padding: 2rem; 
+    .brand {
+      img {
+        zoom: 0.7;
+        padding: 2rem;
       }
-     
     }
     .toggle {
       display: block;
-      z-index: 25;
+      z-index: 110;
       margin: 2rem;
       .x {
         color: white;
-      }
-     
-    }
-    .button-especialista {
-      display: none;
-      button {
-        display: none;
       }
     }
     .nav-container {
@@ -112,10 +106,10 @@
       top: 0;
       right: 0;
       width: 55%;
-      height: auto;
+      height: 100vh;
       background-color: $text-color;
       color: $light-text;
-      z-index: 20;
+      z-index: 100;
       transition: 0.5s ease-in-out;
 
       .links-container {
@@ -123,25 +117,43 @@
         justify-content: center;
         text-align: justify;
         height: 100%;
-        margin: 8rem 0;
         transition: 0.5s ease-in-out;
         padding: 0;
+        margin: 0;
         li {
           padding: 0.5rem 0;
           width: 100%;
           display: flex;
           align-items: center;
           @include text-style(1.3rem, 500, 1em, $light-text);
-
-          &:hover{
+          margin:  0.8rem;
+          &:hover {
             border: 1px solid transparent;
           }
-          .icon-link{
+          .icon-link {
             display: block;
-           }
-          span{
+          }
+          span {
             align-items: center;
             padding: 5px;
+          }
+        }
+        .button-especialista {
+          button {
+            @include button-style(
+              none,
+              1px solid transparent,
+              1rem,
+              100%,
+              green,
+              $light-text
+            );
+            padding: .5rem;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            svg {
+              margin: 0.30rem;
+            }
           }
         }
       }
