@@ -23,10 +23,9 @@
       width: 35vw;
       display: flex;
       padding-right: 15%;
-      border: 1px solid $secondary-color;
       border-radius: 10px;
       padding: 1rem;
-      box-shadow:  3px 5px 20px 1px $secondary-color;
+      box-shadow:  1px 1px 8px $secondary-color;
       height: auto;
       .foto img {
         width: 95px;
@@ -62,12 +61,15 @@
   margin: 10vh;
   margin-left: 9%;
   margin-bottom: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   button {
-    height: 4em;
+    height: auto;
     margin: 0.55em;
     padding: 1em;
-    border-radius: 150px;
+    border-radius: 50px;
     border: none;
     background-color: #c26522;
     cursor: pointer;
@@ -75,8 +77,10 @@
 }
 @media screen and (min-width: 280px) and (max-width: 1080px) {
     .scroll-container{
+      overflow-x: scroll;
+      margin: 0;
+      padding: 0;
         .scroll-content{
-            overflow-y: auto; 
             -webkit-overflow-scrolling: touch;
             .section{
                 margin: 2rem;
@@ -102,6 +106,17 @@
         }
     }
     .button-scroll {
-        display: none;
+      display: block;
+      margin: 0;
+      padding: 0 1rem;
+      button{
+        height: 100%;
+        text-align: center; 
+        margin: 0.2rem;
+        padding: 0.6rem;
+        
+      }
     }
 }
+
+
