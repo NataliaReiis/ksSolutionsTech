@@ -91,11 +91,17 @@
 }
 @media screen and (min-width: 280px) and (max-width: 1080px){
   .contact-container{
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
     .contact-infos-container{
-      width: 100%;
+      width: auto;
+      height: auto;
       margin: 0;
+      padding: 2rem 0;
+      h1{
+        @include text-style(1.9rem, 600, 2.5rem, $secondary-color);
+      }
      
     }
     .contact-form-container{

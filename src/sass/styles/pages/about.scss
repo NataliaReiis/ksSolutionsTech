@@ -1,5 +1,4 @@
 .about {
-  border: 1px solid red;
   .about-infos-container {
     display: flex;
     align-items: center;
@@ -89,12 +88,15 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
 
       img {
-        width: 100%;
+        zoom: 0.7;
       }
       .text-content {
-        width: 85vw;
+        width: auto;
+        margin: 0 ;
+        padding: 0;
 
         h1 {
           margin: 2rem 0;
@@ -134,6 +136,7 @@
       width: 100%;
       flex-direction: column;
       margin: 10rem 0;
+      padding: 0;
       text-align: center;
       .values-item {
         text-align: center;

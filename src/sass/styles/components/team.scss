@@ -23,6 +23,8 @@
       width: 35vw;
       display: flex;
       padding-right: 15%;
+      justify-content: center;
+      text-align: justify;
       border-radius: 10px;
       padding: 1rem;
       box-shadow:  1px 1px 8px $secondary-color;
@@ -58,12 +60,8 @@
 
 .button-scroll {
   width: auto;
-  margin: 10vh;
-  margin-left: 9%;
-  margin-bottom: 8%;
+  margin: 1rem 7rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   button {
     height: auto;
@@ -76,6 +74,11 @@
   }
 }
 @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .title-colab{
+      text-align: center;
+      margin:  0;
+      @include text-style(1.8rem, 400, 2rem, $secondary-color);
+    }
     .scroll-container{
       overflow-x: scroll;
       margin: 0;
@@ -83,8 +86,9 @@
         .scroll-content{
             -webkit-overflow-scrolling: touch;
             .section{
-                margin: 2rem;
+                margin: 1rem;
                 width:400px;
+                height: 350px;
                
                .description-colabs{
 
