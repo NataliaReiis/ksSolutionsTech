@@ -1,4 +1,9 @@
 .solutions-container{
     height: auto;
-    padding-top: 4rem;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
