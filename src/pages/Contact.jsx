@@ -32,10 +32,10 @@ export default function Contact() {
         nav[0].style.transform = "none";
       }, 1500);
     return(
-        <>
+        <div className='contact'>
            <Navbar />
             <Form />
            <Footer />
-        </>
+        </div>
     )
 }
