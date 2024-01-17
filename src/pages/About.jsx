@@ -57,7 +57,7 @@ export default function About() {
     nav[0].style.transform = "none";
   }, 1500);
   return (
-    <>
+    <div className="about">
       <Navbar />
       <div className="about-infos-container">
         <img src={about} alt="" />
@@ -87,6 +87,6 @@ export default function About() {
       <Team />
       <Partners />
       <Footer />
-    </>
+    </div>
   );
 }

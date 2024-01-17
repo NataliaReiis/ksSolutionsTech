@@ -68,7 +68,8 @@
     }
   }
 }
-@media screen and (min-width: 280px) and (max-width: 1080px) {
+
+@media screen and (min-width: 280px) and (max-width: 745px) {
   .home {
     width: auto;
     .main-container {
@@ -78,26 +79,24 @@
         padding: 2rem;  
       
         h1 {
-          @include text-style(5rem, 600, 1.2em, $text-color);
+          @include text-style(4rem, 600, 1.2em, $text-color);
         }
         h2 {
-          @include text-style(1.5rem, 500, 1em, $primary-color);
-          letter-spacing: 6px;
+          @include text-style(1.4rem, 500, 1em, $primary-color);
+          letter-spacing: 3px;
         }
         p {
           @include text-style(1rem, 300, 1.6em, $text-color);
-          width: 70vw;
+          width: 90vw;
           padding: 2rem 1rem 0 1rem;
         }
       }
       .image-principal-container {
-        height: auto;
-        width: auto;
+        height: 90vh;
+        width: 100%;
         display: flex;
         justify-content: end;
         align-items:end;
-        position: relative;
-        top: -8rem;
         left: 4rem;
         img {
         zoom: 0.9; 
